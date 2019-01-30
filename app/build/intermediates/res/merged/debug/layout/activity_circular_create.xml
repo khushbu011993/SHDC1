@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_circular_create"
+        android:typeface="serif"
+        android:textColor="#0000ff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="@string/tv_current_date"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:id="@+id/select_date"
+            android:inputType="date"
+            android:hint="@string/tv_select_date"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="18.12"
+            android:text="@string/tv_circular_title"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="82"
+            android:textSize="22sp"
+            android:id="@+id/circular_title"
+            android:hint="@string/tv_circular_title"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="11.32"
+            android:text="@string/tv_circular_subject"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="88"
+            android:textSize="22sp"
+            android:hint="@string/et_circular_subject_write"
+            android:gravity="left"
+            android:inputType="textMultiLine"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="11.32"
+            android:text="@string/tv_circular_content"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="88"
+            android:textSize="22sp"
+            android:singleLine="false"
+            android:hint="@string/et_circular_content_write"
+            android:gravity="top"
+            android:lines="10"
+            android:inputType="textMultiLine"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnOk"
+        android:textColor="#fff"
+        android:background="@drawable/btn"
+        android:layout_gravity="center"
+        android:id="@+id/btnSave"
+
+        />
+</LinearLayout>

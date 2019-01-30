@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_search_addendance"
+        android:typeface="serif"
+        android:textColor="#0000ff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:id="@+id/attendance_textView"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:text="@string/tv_class"
+            android:id="@+id/degree"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_gravity="center"/>
+        <View
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:layout_width="1dp"
+            android:layout_height="35dp" />
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:id="@+id/degreeSpinner"
+            android:spinnerMode="dropdown"
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:text="@string/tv_section"
+            android:id="@+id/section"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_gravity="center"/>
+        <View
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:layout_width="1dp"
+            android:layout_height="35dp" />
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:id="@+id/sectionSpinner"
+            android:spinnerMode="dropdown"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/tv_from_date"
+        android:id="@+id/tvFromDate"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/et_from_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_weight="2"
+        android:hint="@string/tv_select_date"
+        android:gravity="center"
+        android:inputType="date"
+        android:focusableInTouchMode="false"/>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tv_to_date"
+            android:id="@+id/tvToDate"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/et_to_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/tv_select_date"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:focusableInTouchMode="false"
+        android:inputType="date"/>
+
+</LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/btnSearch"
+            android:id="@+id/submitbtn"/>
+
+</LinearLayout>

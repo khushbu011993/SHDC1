@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/android_gridview_example"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_class_addendance"
+        android:typeface="serif"
+        android:textColor="#0000ff"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_current_date"
+        android:typeface="serif"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:id="@+id/today_date_textView"/>
+
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:padding = "5dp"
+            android:layout_weight="1"
+            android:text = "@string/tv_sno"
+            android:textStyle="bold"
+            android:ellipsize = "end"
+            android:background = "@drawable/cell_shape"
+            android:singleLine="true"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1.5"
+            android:padding = "5dp"
+            android:text = "@string/tv_student_rollno"
+            android:textStyle="bold"
+            android:ellipsize = "end"
+            android:background = "@drawable/cell_shape"
+            android:singleLine="true"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight="2.2"
+            android:padding = "5dp"
+            android:text = "@string/tv_student_name"
+            android:textStyle="bold"
+            android:ellipsize = "end"
+            android:background = "@drawable/cell_shape"
+            android:singleLine="true"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight="1"
+            android:padding = "5dp"
+            android:text = "@string/tv_student_status"
+            android:textStyle="bold"
+            android:ellipsize = "end"
+            android:background = "@drawable/cell_shape"
+            android:singleLine="true"
+            android:gravity="center"
+            />
+    </LinearLayout>
+        <ListView
+            android:id="@+id/listView4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingBottom="30dp"
+            android:layout_weight = "4"
+
+            >
+        </ListView>
+
+
+    <!--<Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/btnOk"
+        android:textColor="#fff"
+        android:background="@drawable/btn"
+        android:id="@+id/btnOk"
+        android:layout_gravity="center_horizontal" />-->
+</LinearLayout>
+    <include layout="@layout/footer"/>
+
+    </RelativeLayout>

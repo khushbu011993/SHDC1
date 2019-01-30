@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student Profile"
+        android:textSize="25sp"
+        android:id="@+id/studentDetail_textView"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+      <!--<TableRow android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="25sp"
+            android:id="@+id/studentName_textView"
+            android:gravity="left"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textSize="20sp"
+            android:singleLine="true"
+            />
+
+    </TableRow>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/studentNameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingLeft="30dp">
+
+                <EditText
+                    android:id="@+id/studentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Student Name"
+                    android:focusable="false"
+                    android:gravity="center"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+    <!--<TableRow android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Father Name "
+            android:textSize="25sp"
+            android:id="@+id/studentFatherName_textView"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Father Name"
+            android:textSize="20sp"
+            android:singleLine="true"
+            />
+
+    </TableRow>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/studentFatherNameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:paddingLeft="30dp">
+
+                <EditText
+                    android:id="@+id/studentFatherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Father Name"
+                    android:focusable="false"
+                    android:gravity="center"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+   <!-- <TableRow android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Mother Name"
+            android:textSize="25sp"
+            android:id="@+id/studentMotherName_textView"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mother Name"
+            android:textSize="20sp"
+            android:singleLine="true"
+            />
+
+    </TableRow>-->
+
+            <!--<android.support.design.widget.TextInputLayout
+                android:id="@+id/studentMotherNameWrapper"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:paddingLeft="30dp">
+
+                <EditText
+                    android:id="@+id/studentMotherName"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Mother Name"
+                    android:focusable="false"
+                    android:gravity="center"
+                    />
+
+            </android.support.design.widget.TextInputLayout>-->
+   <!-- <TableRow android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Gender"
+            android:textSize="25sp"
+            android:id="@+id/studentGender_textView"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gender"
+            android:textSize="20sp"
+            android:singleLine="true"
+            />
+
+    </TableRow>-->
+<!--
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/studentGenderWrapper"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:paddingLeft="30dp">
+
+                <EditText
+                    android:id="@+id/studentGender"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Student Gender"
+                    android:focusable="false"
+                    android:gravity="center"
+                    />
+
+            </android.support.design.widget.TextInputLayout>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/studentDateOBirthWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:paddingLeft="30dp">
+
+        <EditText
+            android:id="@+id/studentDateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Date Of Birth"
+            android:focusable="false"
+            android:gravity="center"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/studentEmailWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:paddingLeft="30dp">
+
+        <EditText
+            android:id="@+id/studentEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Student Email Address"
+            android:focusable="false"
+            android:gravity="center"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+            android:id="@+id/studentAddressWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:paddingLeft="30dp">
+
+            <EditText
+                android:id="@+id/studentAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="Student Address"
+                android:focusable="false"
+                android:gravity="center"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/studentStateWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:paddingLeft="30dp">
+
+                <EditText
+                    android:id="@+id/studentState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Student State"
+                    android:focusable="false"
+                    android:gravity="center"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/studentfatherMobileNoWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                >
+
+                <EditText
+                    android:id="@+id/studentfatherMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Father Mobile No"
+                    android:focusable="false"
+                    android:gravity="center"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<android.support.design.widget.TextInputLayout
+                android:id="@+id/studentFatherEmailWrapper"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:paddingLeft="30dp">
+
+                <EditText
+                    android:id="@+id/studentFatherEmail"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Father Email Address"
+                    android:focusable="false"
+                    android:gravity="center"
+                    />
+
+            </android.support.design.widget.TextInputLayout>-->
+
+
+
+
+              <!--   <Button android:layout_width="100dp"
+                     android:layout_height="38dp"
+                     android:layout_gravity="center_horizontal"
+                     android:layout_marginTop="20dp"
+                     android:text="  OK  "
+                     android:textColor="#fff"
+                     android:background="@drawable/btn"
+                     android:id="@+id/btn_ok"/>-->
+           <!-- <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnOk"
+                android:textColor="#fff"
+                android:background="@drawable/btn"
+                android:id="@+id/btnOk"
+                android:layout_gravity="center_horizontal" />-->
+
+ </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/serialNo"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight="15"
+        android:padding = "5dp"
+        android:text = "S.No"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+
+        />
+    <TextView
+        android:id="@+id/rollNo"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight="20"
+        android:padding = "5dp"
+        android:text = "Roll No"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:singleLine="true"
+
+        />
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight="30"
+        android:padding = "5dp"
+        android:text = "Student Name"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:singleLine="true"
+        />
+    <EditText
+        android:id="@+id/enter_mark"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight="15"
+        android:padding = "5dp"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:singleLine="true"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:hint="Enter Marks"
+        android:gravity="center"
+        />
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1"
+        android:text="submit"/>-->
+
+</LinearLayout>

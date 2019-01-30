@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_show_result"
+        android:typeface="serif"
+        android:textColor="#0000ff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#5d5d5d"
+            android:text="@string/tv_subject"
+            android:gravity="center"
+            android:layout_weight="40"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_subject"
+            android:gravity="center_horizontal"
+            android:layout_weight="60"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:id="@+id/subject_textView"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:padding = "5dp"
+            android:text = "@string/tv_sno"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:background = "@drawable/cell_shape"
+            android:singleLine="true"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1.5"
+            android:padding = "5dp"
+            android:text = "@string/tv_student_rollno"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:background = "@drawable/cell_shape"
+            android:singleLine="true"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "2"
+            android:padding = "5dp"
+            android:text = "@string/tv_student_name"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:background = "@drawable/cell_shape"
+            android:singleLine="true"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:padding = "5dp"
+            android:text = "@string/tv_student_marks"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:background = "@drawable/cell_shape"
+            android:singleLine="true"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:padding = "5dp"
+            android:text = "@string/tv_max_mark"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:background = "@drawable/cell_shape"
+            android:singleLine="true"
+            android:gravity="center"
+            />
+        </LinearLayout>
+            <ListView
+                android:id="@+id/listView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnOk"
+        android:textColor="#fff"
+        android:background="@drawable/btn"
+        android:layout_gravity="center"
+        android:id="@+id/result_show_btn"
+        />
+</LinearLayout>

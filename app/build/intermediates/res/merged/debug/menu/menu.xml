@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:icampus="http://schemas.android.com/apk/res-auto" >
+
+    <item android:id="@+id/logout"
+        android:title="Logout"
+        android:orderInCategory="0"
+        icampus:showAsAction="always"
+       />
+</menu>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/android_gridview_example"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_class_addendance"
+        android:typeface="serif"
+        android:textColor="#0000ff"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:paddingTop="1dp"
+        android:gravity="center"
+         />
+    <TextView
+        android:id="@+id/tv_mark_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tv_current_date"
+        android:typeface="serif"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:paddingTop="1dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/tv_class"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_gravity="center"
+                    android:background="@color/black"
+                    android:layout_width="1dp"
+                    android:layout_height="35dp" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:id="@+id/degreeSpinner"
+                    android:spinnerMode="dropdown"/>
+                <!-- <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="70"
+                     android:gravity="center"
+                     android:paddingLeft="20dp"
+                     android:text="@string/tv_class"
+                     android:textSize="25sp"
+                     android:id="@+id/class_name"/>-->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/tv_stream"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <View
+                    android:layout_gravity="center"
+                    android:background="@color/black"
+                    android:layout_width="1dp"
+                    android:layout_height="35dp" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:id="@+id/streamSpinner"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/tv_semester"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <View
+                    android:layout_gravity="center"
+                    android:background="@color/black"
+                    android:layout_width="1dp"
+                    android:layout_height="35dp" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:id="@+id/semesterSpinner"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/tv_section"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <View
+                    android:layout_gravity="center"
+                    android:background="@color/black"
+                    android:layout_width="1dp"
+                    android:layout_height="35dp" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:id="@+id/sectionSpinner"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/tv_subject"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <View
+                    android:layout_gravity="center"
+                    android:background="@color/black"
+                    android:layout_width="1dp"
+                    android:layout_height="35dp" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:id="@+id/subjectSpinner"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnSearch"
+                android:id="@+id/searchBtn"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/btn"
+                android:layout_marginBottom="15dp"
+
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+    <include layout="@layout/footer"/>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="biz.thinkcomputers.shdc"
+    android:versionCode="7"
+    android:versionName="1.0.6" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <uses-library
+            android:name="com.sec.android.app.multiwindow"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.sec.android.support.multiwindow"
+            android:value="true" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W"
+            android:value="632.0dip" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H"
+            android:value="598.0dip" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W"
+            android:value="632.0dip" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H"
+            android:value="598.0dip" />
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <activity android:name="biz.thinkcomputers.shdc.SplashScreenActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="biz.thinkcomputers.shdc.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="biz.thinkcomputers.shdc.teacher.TeacherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="biz.thinkcomputers.shdc.student.StudentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="biz.thinkcomputers.shdc.student.StudentProfileView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="biz.thinkcomputers.shdc.MarkAttendanceClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="biz.thinkcomputers.shdc.MarkAttendanceStudentList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="biz.thinkcomputers.shdc.teacher.viewattendance.ViewAttendanceClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="biz.thinkcomputers.shdc.teacher.viewattendance.ViewClassAttendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="biz.thinkcomputers.shdc.StudentViewAttendanceDaily"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>

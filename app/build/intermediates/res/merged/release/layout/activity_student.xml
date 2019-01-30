@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/android_gridview_example"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray">
+
+    <!--<GridView
+        android:id="@+id/grid_view_image_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="180dp"
+        android:gravity="center"
+        android:numColumns="2"
+        android:paddingTop="5dp"
+        />-->
+    <GridView
+        android:id="@+id/grid_view_image_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"/>
+    <include layout="@layout/footer"/>
+
+   <!-- <LinearLayout
+        android:layout_weight="0.15"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.70"
+                android:src="@drawable/admin"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.30"
+                android:text="Profile"
+                android:typeface="serif"
+                android:textColor="#0000ff"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/attendance"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.70"
+                android:src="@drawable/faculty1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.30"
+                android:typeface="serif"
+                android:text="Attendance"
+                android:textColor="#0000ff"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.15"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/myclassparent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.70"
+                android:src="@drawable/admin"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.30"
+                android:text="My Class"
+                android:typeface="serif"
+                android:textColor="#0000ff"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/assigenmentparent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.70"
+                android:src="@drawable/faculty1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.30"
+                android:typeface="serif"
+                android:text="Assigenment"
+                android:textColor="#0000ff"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.15"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/feedbackparent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.70"
+                android:src="@drawable/admin"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.30"
+                android:text="Feedback"
+                android:typeface="serif"
+                android:textColor="#0000ff"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ptmparent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.70"
+                android:src="@drawable/faculty1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.30"
+                android:typeface="serif"
+                android:text="PTM"
+                android:textColor="#0000ff"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_gravity="center"/>-->
+</RelativeLayout>

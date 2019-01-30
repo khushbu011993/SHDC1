@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/serialNo"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1.8"
+        android:padding = "5dp"
+        android:text = "Lect/Time"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:textColor="@color/black"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/lecture1"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1.5"
+        android:padding = "5dp"
+        android:text = "Monday"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/lecture2"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1.5"
+        android:padding = "5dp"
+        android:text = "Tuesday"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/lecture3"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1.5"
+        android:padding = "5dp"
+        android:text ="Wednesday"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/lecture4"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1.5"
+        android:padding = "5dp"
+        android:text = "Thursday"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/lecture5"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1.5"
+        android:padding = "5dp"
+        android:text = "Friday"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/lecture6"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1.5"
+        android:padding = "5dp"
+        android:text = "Saturday"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+</LinearLayout>

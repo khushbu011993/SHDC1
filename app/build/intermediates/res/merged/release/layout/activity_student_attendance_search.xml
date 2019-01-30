@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tv_search_addendance"
+        android:typeface="serif"
+        android:textColor="#0000ff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="28"
+            android:text="@string/tv_from_date"
+            android:typeface="serif"
+            android:textColor="#0000ff"
+            android:textSize="25sp"
+            android:paddingLeft="50dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="72"
+            android:text="@string/tv_select_date"
+            android:typeface="serif"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:id="@+id/student_present_count"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:text="@string/tv_to_date"
+            android:typeface="serif"
+            android:textColor="#0000ff"
+            android:textSize="25sp"
+            android:paddingLeft="50dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:text="@string/tv_select_date"
+            android:typeface="serif"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:id="@+id/student_absent_count"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btnSearch"
+        android:id="@+id/searchbtn"
+        />
+</LinearLayout>

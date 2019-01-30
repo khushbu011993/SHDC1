@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/serialNo"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1"
+        android:padding = "5dp"
+        android:text = "SNo"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/student_rollNo"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1.5"
+        android:padding = "5dp"
+        android:text = "Roll No"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "2"
+        android:padding = "5dp"
+        android:text = "Student Name"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:singleLine="true"
+        />
+    <TextView
+        android:id="@+id/student_marks"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1"
+        android:padding = "5dp"
+        android:text = "Marks"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:singleLine="true"
+
+        />
+    <TextView
+        android:id="@+id/total_marks"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1"
+        android:padding = "5dp"
+        android:text = "Max.Marks"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:background = "@drawable/cell_shape"
+        android:singleLine="true"
+        />
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:weightSum="1">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_circular_view"
+        android:typeface="serif"
+        android:textColor="#0000ff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:paddingTop="10dp"
+        android:gravity="center"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="434dp"
+        android:id="@+id/circular_listview"
+        android:layout_weight="0.26" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnCreate"
+            android:textColor="#fff"
+            android:background="@drawable/btn"
+            android:layout_gravity="center"
+            android:id="@+id/btnCreate"
+            android:layout_weight="50"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnOk"
+            android:textColor="#fff"
+            android:background="@drawable/btn"
+            android:id="@+id/btnOk"
+            android:layout_weight="50" />
+    </LinearLayout>
+
+</LinearLayout>

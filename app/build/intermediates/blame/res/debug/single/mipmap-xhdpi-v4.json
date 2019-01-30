@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\Office data\\SHDC\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\appicon.png",
+        "source": "D:\\Office data\\SHDC\\app\\src\\main\\res\\mipmap-xhdpi\\appicon.png"
+    },
+    {
+        "merged": "D:\\Office data\\SHDC\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
+        "source": "D:\\Office data\\SHDC\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\THINK\\AndroidStudioProjects\\SHDC\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\THINK\\AndroidStudioProjects\\SHDC\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\THINK\\AndroidStudioProjects\\SHDC\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\appicon.png",
+        "source": "C:\\Users\\THINK\\AndroidStudioProjects\\SHDC\\app\\src\\main\\res\\mipmap-xhdpi\\appicon.png"
+    },
+    {
+        "merged": "D:\\Officedata\\SHDC\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher.png",
+        "source": "D:\\Officedata\\SHDC\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Officedata\\SHDC\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\appicon.png",
+        "source": "D:\\Officedata\\SHDC\\app\\src\\main\\res\\mipmap-xhdpi\\appicon.png"
+    }
+]

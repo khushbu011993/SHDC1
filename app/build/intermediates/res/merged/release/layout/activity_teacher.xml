@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/android_gridview_example"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray">
+
+    <GridView
+        android:id="@+id/grid_view_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"/>
+
+    <include layout="@layout/footer"/>
+
+</RelativeLayout>
+
+
+<!--<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scaleType="center"
+    android:useDefaultMargins="true"
+    app:columnCount="2"
+    >
+
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp">
+
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/view_attendance"
+            android:id="@+id/buttonWeddingDayCheatSheet"
+            android:layout_gravity="center_horizontal">
+        </ImageView>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp">
+
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mark_attendance"
+            android:id="@+id/buttonShareFavoriteRecipe"
+            android:layout_gravity="center_horizontal">
+        </ImageView>
+    </FrameLayout>
+
+    &lt;!&ndash;<ImageButton
+        android:id="@+id/btn1"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:background="@drawable/view_attendance"
+        android:scaleType="fitCenter"
+        android:layout_width="181dp"
+        android:layout_height="241dp" />
+
+    <ImageButton
+        android:id="@+id/btn2"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:background="@drawable/mark_attendance"
+        android:scaleType="fitCenter"
+        android:layout_width="181dp"
+        android:layout_height="241dp" />&ndash;&gt;
+
+    <ImageButton
+        android:id="@+id/btn3"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:background="@drawable/view_result"
+        android:scaleType="fitCenter"
+        android:layout_width="181dp"
+        android:layout_height="241dp"/>
+
+    <ImageButton
+        android:id="@+id/btn4"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:background="@drawable/mark_result"
+        android:scaleType="fitCenter"
+        android:layout_width="181dp"
+        android:layout_height="241dp"/>
+
+    <ImageButton
+        android:id="@+id/btn5"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:background="@drawable/view_timetable"
+        android:scaleType="fitCenter"
+        android:layout_width="181dp"
+        android:layout_height="241dp"/>
+
+    <ImageButton
+        android:id="@+id/btn6"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:background="@drawable/circular"
+        android:scaleType="fitCenter"
+        android:layout_width="181dp"
+        android:layout_height="241dp"/>
+
+</GridLayout>-->
+<!--<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    &lt;!&ndash; Setting up GridLayout support library in IntelliJ: http://stackoverflow.com/questions/12468606/intellij-and-android-support-v7-widget-gridlayout &ndash;&gt;
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        grid:columnCount="2"
+        grid:rowCount="2"
+        android:background="#FFF">
+        <LinearLayout
+            android:id="@+id/redSquare"
+            grid:layout_columnSpan="1"
+            grid:layout_rowSpan="1"
+            android:background="@drawable/view_attendance"
+            grid:layout_row="0"
+            grid:layout_column="0"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/greenSquare"
+            grid:layout_columnSpan="1"
+            grid:layout_rowSpan="1"
+            android:background="@drawable/mark_attendance"
+            grid:layout_row="0"
+            grid:layout_column="1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            />
+        <LinearLayout
+            android:id="@+id/blueSquare"
+            grid:layout_columnSpan="1"
+            grid:layout_rowSpan="1"
+            android:background="@drawable/view_result"
+            grid:layout_row="1"
+            grid:layout_column="0"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            />
+
+
+    </android.support.v7.widget.GridLayout>
+</LinearLayout>-->
+<!--<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="75"
+        android:orientation="vertical">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    android:layout_weight="25"
+    >
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:src="@drawable/view_attendance"
+        android:id="@+id/image1"/>
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:src="@drawable/mark_attendance"
+        android:id="@+id/image2"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="25"
+        >
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:src="@drawable/view_result"
+            android:id="@+id/image3"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:src="@drawable/mark_result"
+            android:id="@+id/image4"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="25"
+        >
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:src="@drawable/view_timetable"
+            android:id="@+id/image5"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:src="@drawable/circular"
+            android:id="@+id/image6"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>-->
+
+<!--<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:columnCount="2"
+    android:rowCount="3"
+    android:orientation="vertical"
+    app:layout_columnWeight="50"
+    app:layout_rowWeight="75">
+
+    <ImageButton
+        android:layout_gravity="fill_vertical"
+        app:layout_columnWeight="25"
+        app:layout_rowWeight="25"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:src="@drawable/view_attendance"
+        android:id="@+id/image1"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:layout_gravity="fill_vertical"
+        app:layout_columnWeight="25"
+        app:layout_rowWeight="25"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:src="@drawable/mark_attendance"
+        android:id="@+id/image2"/>
+    <ImageButton
+        android:layout_gravity="fill_vertical"
+        app:layout_columnWeight="25"
+        app:layout_rowWeight="25"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:src="@drawable/view_result"
+        android:id="@+id/image3"/>
+    <ImageButton
+        android:layout_gravity="fill_vertical"
+        app:layout_columnWeight="25"
+        app:layout_rowWeight="25"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:src="@drawable/mark_result"
+        android:id="@+id/image4"/>
+    <ImageButton
+        android:layout_gravity="fill_vertical"
+        app:layout_columnWeight="25"
+        app:layout_rowWeight="25"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:src="@drawable/view_result"
+        android:id="@+id/image5"/>
+    <ImageButton
+        android:layout_gravity="fill_vertical"
+        app:layout_columnWeight="25"
+        app:layout_rowWeight="25"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:src="@drawable/mark_result"
+        android:id="@+id/image6"/>
+
+</GridLayout>-->
+
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_weight="0.15"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/attendance"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.70"
+                android:src="@drawable/attendance"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.30"
+                android:text="Attendance"
+                android:typeface="serif"
+                android:textColor="#0000ff"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/activity_mark_attendance"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.70"
+                android:src="@drawable/activity_mark_attendance"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.30"
+                android:typeface="serif"
+                android:text="Mark Attendance"
+                android:textColor="#0000ff"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.15"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/subject"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.70"
+                android:src="@drawable/subject"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.30"
+                android:text="Subject"
+                android:typeface="serif"
+                android:textColor="#0000ff"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/timetable"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.70"
+                android:src="@drawable/timetable"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.30"
+                android:typeface="serif"
+                android:text="Time Table"
+                android:textColor="#0000ff"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.15"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/circular"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.70"
+                android:src="@drawable/circular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.30"
+                android:text="CircularView"
+                android:typeface="serif"
+                android:textColor="#0000ff"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"/>
+
+</LinearLayout>-->

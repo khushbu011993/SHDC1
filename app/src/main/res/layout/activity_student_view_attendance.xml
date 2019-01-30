@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_student_attendance"
+        android:typeface="serif"
+        android:textColor="#0000ff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        />
+    <!--<LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="45"
+            android:textSize="22sp"
+            android:text="@string/tv_from_date"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/date_from_tv"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:textSize="22sp"
+            android:text="@string/tv_to"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="45"
+            android:textSize="22sp"
+            android:text="@string/tv_to_date"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/date_to_tv"/>
+    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:padding = "5dp"
+            android:maxLines = "1"
+            android:layout_weight="10"
+            android:text = "@string/tv_sno"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:background = "@drawable/cell_shape"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:padding = "5dp"
+            android:maxLines = "1"
+            android:layout_weight="20"
+            android:text = "@string/tv_subject"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:background = "@drawable/cell_shape"
+            android:singleLine="true"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:text = "@string/tv_attendance_detail"
+            android:padding = "5dp"
+            android:layout_weight="30"
+            android:maxLines = "1"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:background = "@drawable/cell_shape"
+            android:singleLine="true"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listViewStudentAttendanceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:headerDividersEnabled = "true">
+    </ListView>
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="@string/tv_student_status_present"
+            android:typeface="serif"
+            android:textColor="#0000ff"
+            android:textSize="25sp"
+            android:paddingLeft="60dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="X Days"
+            android:typeface="serif"
+            android:textColor="#0000ff"
+            android:textSize="25sp"
+            android:id="@+id/student_present_count"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="@string/tv_student_status_absent"
+            android:typeface="serif"
+            android:textColor="#0000ff"
+            android:textSize="25sp"
+            android:paddingLeft="65dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="Y Days"
+            android:typeface="serif"
+            android:textColor="#0000ff"
+            android:textSize="25sp"
+            android:id="@+id/student_absent_count"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="@string/tv_student_present_percentage"
+            android:typeface="serif"
+            android:textColor="#0000ff"
+            android:textSize="25sp"
+            android:paddingLeft="65dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="z %"
+            android:typeface="serif"
+            android:textColor="#0000ff"
+            android:textSize="25sp"
+            android:id="@+id/student_percentage_count"/>
+    </LinearLayout>-->
+</LinearLayout>
